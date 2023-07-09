@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section class="container">
+        <div class="container__nascimento">
+            <p>Ano de Nascimento: <input type="number" name="txtAno" id="txtAno"></p>
+            
+        </div>
+        <div class="container__sexo">
+            <p>Sexo:</p>
+            <input type="radio" name="txtSexo" id="txtSexo" value="Homem">
+            <label for="txtSexo">Masculino</label>
+            <input type="radio" name="txtSexo" id="txtSexo" value="Mulher">
+            <label for="txtSexo">Feminino</label>
+            
+        </div>
+        <div class="container__botao">
+            <input type="button" value="Verificar" onclick="resultado()">
+        </div>
+        <div class="container__resultado">
+            <p id="msg">Digite seu ano de nascimento e selecione seu sexo acima.</p>
+            <!---<img src="./assets/homemjovem.jpg" alt="" class="resultado__imagem" id="img">-->
+        </div>
+    </section>
+    <footer>
+       <h2>Feito por WallacePiovani</h2>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
